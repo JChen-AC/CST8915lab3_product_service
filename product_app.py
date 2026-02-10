@@ -16,6 +16,10 @@ products = [
     { "id": 4, "name": "Fish Seeds", "price": 2.99 }
 ]
 
+@app.route("/health", methods=['GET'])
+def health_check():
+    return jsonify({"status": "healthy"}), 200  # Return HTTP status 200 OK
+
 @app.route("/products", methods=['GET'])
 def get_products():    
     return jsonify(products), 200
