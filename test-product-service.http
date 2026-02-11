@@ -1,10 +1,18 @@
 # Test the product-service
 
 ### Get list of products
+GET http://localhost:3030/health
+Accept: application/json
+
+### Get list of products
 GET http://localhost:3030/products
 Accept: application/json
 
 
 ### Get list of products
-GET http://productservice-efa4d0d6bgacc7hh.canadacentral-01.azurewebsites.net/products
+GET http://prodprof-dkf0c2fhc6bzcjfz.canadacentral-01.azurewebsites.net/products
+Accept: application/json
+
+### Get list of products
+GET http://productservice-efa4d0d6bgacc7hh.canadacentral-01.azurewebsites.net/health
 Accept: application/json
