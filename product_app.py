@@ -31,7 +31,7 @@ if __name__ == '__main__':
     # https://stackoverflow.com/questions/8570636/change-folder-name-during-clone
     # https://dev.to/jakewitcher/using-env-files-for-environment-variables-in-python-applications-55a1 
     load_dotenv()    
-    port_num = os.getenv("Port") 
+    port_num = os.getenv("PORT") 
     if not port_num:
         port_num = "3030"
     
